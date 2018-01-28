@@ -1,7 +1,7 @@
 # irc-discord-layer
 Creates a mirror of an IRC lobby for a discord server
 
-#Required Packages (use nu-get)
+# Required Packages (use nu-get)
 Discord.Net
 Microsoft.Data.Sqlite
 System.Collections
@@ -9,7 +9,7 @@ System.Configuration
 
 Running this is a .NET framework console application
 
-#Basic idea
+# Basic idea
 
 You need an existing discord server with a landing channel (I call it "#intro") and a lobby channel
 By default, users joining for the first time will only see the #intro channel, which should only contain a bot message telling them to PM the bot to get started.
@@ -43,7 +43,7 @@ If a user leaves the server, their IRC session is disconnected. If they come bac
 If a discord user is banned from the server, their IRC session is disconnected and their discord ID will not be allowed to connect again.
 
 
-#UNFINISHED
+# UNFINISHED
 Have not actually set it to 30 char max on names
 have not tested what happens when a channel is forcibly cleared. It should remove everyone's role for that channel and delete the channel, but i haven't tested it.
 Currently no way to update password.
